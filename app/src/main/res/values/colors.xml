@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard Android colors -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6B9AC4</color>
+    <color name="purple_700">#4A6FA5</color>
+    <color name="teal_200">#7EB5A6</color>
+    <color name="teal_700">#5D9283</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6B9AC4</color>
+    <color name="colorPrimaryDark">#4A6FA5</color>
+    <color name="colorAccent">#7EB5A6</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSecondaryVariant">#5D9283</color>
+
+    <!-- WELLNESS JOURNEY THEME · 60-30-10 -->
+    <!-- 60%: Soft light background -->
+    <color name="chibi_bg">#FCFCFF</color>          <!-- Serene white background -->
+
+    <!-- 30%: Primary colors for main elements -->
+    <color name="chibi_light_green">#6B9AC4</color>     <!-- Calming blue primary -->
+    <color name="chibi_light_bg">#F5F7FA</color>        <!-- Light blue hint -->
+
+    <!-- 10%: Accent colors for highlights and buttons -->
+    <color name="chibi_green">#4A6FA5</color>       <!-- Deep blue accent -->
+    <color name="chibi_accent_blue">#7EB5A6</color>     <!-- Sage green secondary -->
+    <color name="chibi_accent_purple">#E2B4BD</color>   <!-- Soft rose accent -->
+
+    <!-- Texts -->
+    <color name="chibi_text">#344055</color>        <!-- Dark blue for good readability -->
+    <color name="chibi_muted">#8C9DB5</color>       <!-- Muted blue-gray -->
+
+    <!-- Water card specific colors -->
+    <color name="chibi_water_bg">#F0F5FA</color>      <!-- Very light blue -->
+    <color name="chibi_water">#4A6FA5</color>        <!-- Deep blue progress -->
+    <color name="chibi_water_track">#E6EEF7</color>  <!-- Light blue track -->
+
+    <!-- Additional wellness-inspired colors -->
+    <color name="chibi_mint">#7EB5A6</color>        <!-- Sage green -->
+    <color name="chibi_teal">#4A6FA5</color>        <!-- Deep blue -->
+    <color name="chibi_cyan">#95B8D1</color>        <!-- Soft blue -->
+
+    <!-- Add these to your existing colors.xml -->
+    <color name="chibi_spinner_bg">#F5F7FA</color>
+    <color name="chibi_spinner_stroke">#6B9AC4</color>
+</resources>
