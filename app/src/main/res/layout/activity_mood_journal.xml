@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/chibi_light_bg"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mood Journal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/chibi_text" />
+
+        <!-- Calendar -->
+        <CalendarView
+            android:id="@+id/calendarMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Selected-day header (kept same id) -->
+        <TextView
+            android:id="@+id/tvMoodDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a date to see moods"
+            android:textColor="@color/chibi_muted"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Logs list (kept same id) -->
+        <ListView
+            android:id="@+id/listMoodDay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:divider="@color/chibi_light_green"
+            android:dividerHeight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

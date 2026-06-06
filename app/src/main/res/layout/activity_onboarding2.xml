@@ -1,0 +1,99 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chibi_bg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvHeading2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Log your mood with emojis"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/chibi_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSub2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Capture how you feel in a tap."
+        android:textColor="@color/chibi_muted"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivArt2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/onb2"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/tvSub2"
+        app:layout_constraintBottom_toTopOf="@id/dotsIndicator2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dotsIndicator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@android:color/transparent"
+
+        app:tabPaddingStart="8dp"
+        app:tabPaddingEnd="8dp"
+        app:tabMode="fixed"
+        app:tabGravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/ivArt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/dotsIndicator2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSkip2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/chibi_green"/>
+
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/chibi_light_green"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

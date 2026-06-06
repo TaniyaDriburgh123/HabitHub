@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/chibi_light_bg"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mood Tracker"
+            android:textStyle="bold"
+            android:textColor="@color/chibi_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLastMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last mood: —"
+            android:textColor="@color/chibi_muted"
+            android:layout_marginTop="8dp" />
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMood1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😊"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Happy" />
+
+            <Button
+                android:id="@+id/btnMood2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😌"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Calm" />
+
+            <Button
+                android:id="@+id/btnMood3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😕"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Confused" />
+
+            <Button
+                android:id="@+id/btnMood4"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😢"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Sad" />
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMood5"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😡"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Angry" />
+
+            <Button
+                android:id="@+id/btnMood6"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="🤩"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Excited" />
+
+            <Button
+                android:id="@+id/btnMood7"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="😴"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Tired" />
+
+            <Button
+                android:id="@+id/btnMood8"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/chibi_circle_button"
+                android:text="🤒"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:contentDescription="Unwell" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenMood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journal"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/chibi_green"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenMoodChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chart"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/chibi_light_green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

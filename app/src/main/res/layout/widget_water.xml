@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/chibi_water_bg"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header with icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_water"
+                android:layout_marginEnd="8dp"
+                 />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hydration"
+                android:textStyle="bold"
+                android:textColor="@color/chibi_text"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvWaterInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / 2000 ml"
+                android:textStyle="bold"
+                android:textColor="@color/chibi_text"/>
+        </LinearLayout>
+
+        <!-- Progress with percentage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvWaterPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/chibi_teal"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressWater"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/chibi_water"
+                android:backgroundTint="@color/chibi_water_track" />
+        </LinearLayout>
+
+        <!-- Quick add buttons (simplified) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick add:"
+            android:textColor="@color/chibi_muted"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddSmall"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="+ 150 ml"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/chibi_light_green"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddMedium"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="+ 250 ml"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/chibi_green"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddLarge"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="+ 500 ml"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/chibi_cyan"/>
+
+        </LinearLayout>
+
+        <!-- Reminder status and actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_notifications"
+                android:layout_marginEnd="6dp"
+                 />
+
+            <TextView
+                android:id="@+id/tvReminderStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reminders: Off"
+                android:textColor="@color/chibi_text"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenHydration"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Settings"
+                android:textSize="11sp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/chibi_green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

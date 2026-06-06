@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/chibi_bg">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/chibi_light_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitleMoodChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mood Trend"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average mood per day (tap a range below)"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginTop="4dp" />
+
+            <!-- Range selector (simple row to avoid style issues) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn7"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7d"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/chibi_green"
+                    android:textColor="@android:color/white" />
+
+                <Space android:layout_width="8dp" android:layout_height="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn14"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14d"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/chibi_green"
+                    android:textColor="@android:color/white" />
+
+                <Space android:layout_width="8dp" android:layout_height="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn30"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30d"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/chibi_green"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Legend -->
+            <TextView
+                android:id="@+id/tvLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scale: 😢/😡/🤒 (1)  •  😕/😴 (2)  •  😌 (3)  •  😊/🤩 (4)"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp" />
+
+            <!-- Chart -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Empty state -->
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No mood data in this range yet."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.core.widget.NestedScrollView>
