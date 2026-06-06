@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Wellness Journey</string>
+    <string name="welcome_message">Welcome to Wellness Journey</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="loading">Loading...</string>
+    <string name="error_message">Something went wrong. Please try again.</string>
+    <string name="success_message">Operation completed successfully</string>
+    <string name="required_field">This field is required</string>
+    <string name="invalid_email">Please enter a valid email address</string>
+    <string name="invalid_password">Password must be at least 6 characters long</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+</resources>
